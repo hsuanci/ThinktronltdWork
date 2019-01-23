@@ -12,7 +12,7 @@ soup = BeautifulSoup(page,'html.parser')
 JsonData = json.loads(str(soup))
 geolocator = Nominatim()
 
-conn = psycopg2.connect(database="monitoringdata", user="postgres", password="hhy801227", host="127.0.0.1", port="5432")
+conn = psycopg2.connect(database="monitoringdata", user="postgres", password="password", host="127.0.0.1", port="5432")
 print "Opened database successfully"
 cur = conn.cursor()
 
